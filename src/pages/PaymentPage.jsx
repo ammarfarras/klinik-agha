@@ -83,7 +83,6 @@ const PaymentPage = () => {
                   {" "}
                   {selectedTime}
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="Pagi (07.00 - 05.00 AM)">
                     Pagi (07.00 - 05.00 AM)
