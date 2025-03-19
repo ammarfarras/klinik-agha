@@ -7,28 +7,28 @@
 }
 
 .article-lainya {
-  background-color: linear-gradient(
+  background-image: linear-gradient(
     to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 }
 
 .logindong {
-  border: rgba(0, 175, 81, 1) 1px solid !important;
+  border: rgba(58, 142, 246, 1) 1px solid !important;
 }
 
 .logindong:hover {
   background-image: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  ) !important;
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
   color: white !important;
 }
 
 .active {
-  color: rgba(0, 175, 81, 1) !important;
+  color: rgba(58, 142, 246, 1) !important;
   font-weight: 700 !important;
 }
 
@@ -67,30 +67,30 @@ p {
 }
 
 .main-button {
-  background: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+  background-image: linear-gradient(
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 600;
-  border: 1px solid rgba(0, 175, 81, 1);
+  border: 1px solid rgba(58, 142, 246, 1);
   border-radius: 11.25px;
   transition: 0.5s ease-in-out;
 }
 
 .main-button:hover {
   background: white;
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
 }
 
 .main-button-register {
   background-color: 0e90E4;
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
   padding: 10px 20px;
   text-decoration: none;
   text-transform: capitalize;
@@ -102,10 +102,10 @@ p {
 
 .main-button-register:hover {
   background: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 
   border: 1px solid rgba(0, 175, 81, 1);
   color: white;
@@ -115,10 +115,10 @@ p {
   background-color: white;
   padding: 14px;
   box-shadow: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 }
 
 /* ===================== BANNER SECTION ====================== */

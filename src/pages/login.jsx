@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./../styles/loginregis.css";
-import loginLogo from "./../assets/klinik.png";
+import loginLogo from "./../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -67,7 +67,7 @@ function Login() {
                 </h1>
                 <p data-aos="fade-right" data-aos-duration="1000">
                   Login dulu yuk sebelum kamu mengakses platform klinik
-                  Depok
+                  Pratama Agha
                 </p>
               </div>
               <div className="login-form">

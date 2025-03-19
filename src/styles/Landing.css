@@ -63,7 +63,7 @@ body {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(rgba(0, 175, 81, 1));
+  background: linear-gradient(rgba(58, 142, 246, 1));
 }
 
 .hero-text {
@@ -110,7 +110,7 @@ nav {
 }
 
 .btn {
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
   min-width: 100px;
   text-align: center;
   text-decoration: none;
@@ -121,33 +121,37 @@ nav {
 }
 
 .btn-secondary {
-  border: 2px solid rgba(0, 175, 81, 1);
-  color: rgba(0, 175, 81, 1);
+  border: 2px solid rgba(58, 142, 246, 1);
+  color: rgba(58, 142, 246, 1);
   background: #ffffff;
 }
 
 .btn-secondary:hover {
   border: 2px solid
-    linear-gradient(to right, rgba(0, 174, 83, 1), rgba(0, 122, 85, 1));
-  color: linear-gradient(to right, rgba(0, 174, 83, 1), rgba(0, 122, 85, 1));
+    linear-gradient(to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1));
+  color: linear-gradient(to left,
+  rgba(158, 193, 238, 1), /* Light Blue */
+  rgba(58, 142, 246, 1));
   box-sizing: border-box;
 }
 
 .btn-primary {
   color: #fff;
   background: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 }
 
 .btn-primary:hover {
   background: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 }
 
 nav ul {
@@ -169,7 +173,7 @@ nav ul li a {
 
 nav ul li a:hover {
   /* font-weight: bold; */
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
 }
 
 footer li {
@@ -185,10 +189,10 @@ footer li {
   width: auto;
   height: 400px;
   background-image: linear-gradient(
-    to right,
-    rgba(0, 174, 83, 1),
-    rgba(0, 122, 85, 1)
-  );
+    to left,
+    rgba(158, 193, 238, 1), /* Light Blue */
+    rgba(58, 142, 246, 1)    /* Dark Blue */
+);
 }
 
 .hero-container div {
@@ -231,7 +235,7 @@ footer li {
 }
 
 .a-text {
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
   font-size: 30px;
   justify-content: center;
   padding: 10px 0 30px 0;
@@ -290,7 +294,7 @@ footer li {
 }
 
 .card-service {
-  border: rgba(0, 175, 81, 1) solid 1px;
+  border: rgba(58, 142, 246, 1) solid 1px;
   background-color: rgba(0, 175, 81, 0.02);
   min-height: 240px;
   border-radius: 5px;
@@ -311,7 +315,7 @@ footer li {
 }
 .card-introduction h2 {
   font-size: 30px;
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
   margin-bottom: 15px;
 }
 
@@ -339,7 +343,7 @@ footer li {
 }
 
 .btn-art {
-  color: rgba(0, 175, 81, 1);
+  color: rgba(58, 142, 246, 1);
   font-weight: 600;
   min-width: 100px;
   text-decoration: none;

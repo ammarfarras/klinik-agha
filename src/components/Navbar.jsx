@@ -1,11 +1,10 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
-import CarevulLogo from "../assets/sign.png";
 import "./../styles/Navbar.css";
 import { Container, Button, Dropdown } from "react-bootstrap";
 import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
-import logoAgha from "../assets/klinik-agha-removebg-preview.png"
+import logoAgha from "../assets/agha fix.png"
 
 function BasicExample() {
   const isLoggedIn = JSON.parse(localStorage.getItem("idUser")); // // true or false
@@ -76,7 +75,7 @@ function BasicExample() {
         <Navbar.Brand href="#">
           {" "}
           <div className="logoApp" onClick={() => navigate("/")}>
-            <img width={200} src={logoAgha} alt="Carevul Logo" />{" "}
+            <img width={120} src={logoAgha} alt="Carevul Logo" />{" "}
           </div>{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

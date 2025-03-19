@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./../styles/loginregis.css";
-import regisLogo from "./../assets/klinik.png";
+import regisLogo from "./../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -78,7 +78,7 @@ function Register() {
               <div className="header">
                 <h1>Daftar dulu yuk</h1>
                 <p>
-                  Gratis konsultasi di Klinik Depok dimanapun dan kapanpun
+                  Gratis konsultasi di Klinik Pratama Agha dimanapun dan kapanpun
                 </p>
               </div>
               <div className="login-form">

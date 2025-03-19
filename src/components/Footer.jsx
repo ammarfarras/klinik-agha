@@ -1,4 +1,4 @@
-import carevulLogo from "../assets/sign.png";
+import logoAgha from "../assets/agha fix.png";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import fb from "../assets/icon/Facebook.svg";
@@ -14,13 +14,13 @@ const footer = () => {
         <div className="container ">
           <div className="row d-flex justify-content-between pt-4 pb-3">
             <div className="col-mb-5 col-md-4 mt">
-              <img width={70} src={carevulLogo} alt="" />
+              <img width={150} src={logoAgha} alt="" />
               <div className="text-gray  mb-4">
                 <p>
                   Kamu lagi sakit?
                   <span className="text-carevul fw-bolder">
                     {" "}
-                    Klinik Depok
+                    Klinik Pratama Agha
                   </span>{" "}
                   {/* <span className="text-carevul fw-bolder"> Carevul </span> */}
                   solusinya, tanpa antri, tanpa ribet, konsulin aja!
@@ -71,7 +71,7 @@ const footer = () => {
           <hr />
           <div className="d-flex justify-content-center align-items-center ">
             <div className="d-flex justify-content-center align-items-center ">
-              Copyright © 2023 Klinik Depok
+              Copyright © 2023 Klinik Pratama Agha
             </div>
           </div>
         </div>
