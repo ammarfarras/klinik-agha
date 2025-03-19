@@ -4,27 +4,40 @@ import { Accordion, Card } from "react-bootstrap";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import "./../styles/category-doctor.css";
 import { Link } from "react-router-dom";
+import Card1 from "../assets/card-1.png"
+import Card2 from "../assets/card-2.png"
+import Card3 from "../assets/card-3.png"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import JadwalDokter from "./JadwalDokter";
 
-function CardCategory() {
-  const [cards, setCard] = useState([]);
+const cards = [
+  {
+    category: "Poli Umum",
+    image: Card1,
+    name: "Poli Umum",
+    id: "1",
+  },
+  {
+    category: "Poli Kandungan",
+    image: Card2,
+    name: "Poli Kandungan",
+    id: "2",
+  },
+  {
+    category: "Poli Gigi",
+    image: Card3,
+    name: "Poli Gigi",
+    id: "3",
+  },
+];
 
+function CardCategory() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-
-  useEffect(() => {
-    axios("https://64de412c825d19d9bfb25d14.mockapi.io/category_doctor").then(
-      (result) => setCard(result.data)
-      
-    );
-  }, []);
-
- 
 
   const handleCategoryClick = (categoryId, category) => {
     // Store the selected category in local storage

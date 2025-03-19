@@ -65,6 +65,18 @@ const PaymentPage = () => {
     }
   };
 
+  useEffect(() => {
+    const selectedCategory = localStorage.getItem('selectedCategory');
+    if (!selectedCategory) {
+      navigate("/consult/category")
+      Swal.fire({
+        title: "Pilih Kategori Dokter",
+        text: "Silahkan Pilih Poli terlebih dahulu 👏",
+        icon: "info",
+      });
+    }
+  },[])
+
   return (
     <>
       <Container className="mt-5">

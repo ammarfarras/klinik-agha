@@ -1,8 +1,9 @@
-// import { width } from "@mui/system";
-import { Outlet } from "react-router";
-import { Link, NavLink } from "react-router-dom";
+import { Outlet, useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const Consult = () => {
+  const location = useLocation(); // Ambil path aktif saat ini
+
   return (
     <>
       <header id="header" className="mt-5">
@@ -13,8 +14,13 @@ const Consult = () => {
                 to="/consult/category"
                 className="fw-bold text-decoration-none"
               >
-                <h4 className="text-carevul text-decoration-none">
-                  {" "}
+                <h4
+                  className={`text-decoration-none ${
+                    location.pathname === "/consult/category"
+                      ? "text-carevul"
+                      : "text-secondary"
+                  }`}
+                >
                   Kategori Dokter
                 </h4>
               </NavLink>
@@ -28,14 +34,21 @@ const Consult = () => {
 
             <div className="col-md-7">
               <NavLink
-                to="paymentdoctor/bookingstatus"
+                to="/consult/paymentdoctor/bookingstatus"
                 className="fw-bold text-decoration-none"
               >
-                <h4 className="text-light-gray">Booking Status</h4>
+                <h4
+                  className={`${
+                    location.pathname === "/consult/paymentdoctor/bookingstatus"
+                      ? "text-carevul"
+                      : "text-light-gray"
+                  }`}
+                >
+                  Booking Status
+                </h4>
               </NavLink>
               <p className="lead text-secondary">
                 <small>
-                  {" "}
                   Pilih dokter yang sesuai dengan kebutuhan kamu yuk!
                 </small>
               </p>
