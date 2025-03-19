@@ -60,10 +60,10 @@ const footer = () => {
                 <div className="fw-2 d-flex flex-column gap-2">
                   <h5 className="text-carevul ">Kontak Kami</h5>
 
-                  <span className="fw-normal">klinikdepok@gmail.com</span>
+                  <span className="fw-normal">klinikagha02@gmail.com</span>
 
-                  <span>Jl. Margonda Raya No.45, Depok</span>
-                  <span>0818-0483-1774</span>
+                  <span>Jl. KH. Ahmad Dahlan No.2 Pancoran Mas, Depok 16434</span>
+                  <span>0821-2404-9705</span>
                 </div>
               </div>
             </div>
