@@ -17,13 +17,13 @@ const footer = () => {
               <img width={150} src={logoAgha} alt="" />
               <div className="text-gray  mb-4">
                 <p>
-                  Kamu lagi sakit?
+                  Sehat tanpa ribet!
                   <span className="text-carevul fw-bolder">
                     {" "}
                     Klinik Pratama Agha
                   </span>{" "}
                   {/* <span className="text-carevul fw-bolder"> Carevul </span> */}
-                  solusinya, tanpa antri, tanpa ribet, konsulin aja!
+                  siap melayani, daftar mudah, tanpa stres—Konsultasi mudah dan cepat!
                 </p>
               </div>
 

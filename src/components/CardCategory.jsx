@@ -26,9 +26,9 @@ const cards = [
     id: "2",
   },
   {
-    category: "Poli Gigi",
+    category: "Laboratorium",
     image: Card3,
-    name: "Poli Gigi",
+    name: "Laboratorium",
     id: "3",
   },
 ];
