@@ -85,6 +85,37 @@ body {
   line-height: 30px;
 }
 
+.faq-section h2 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* TAMPILAN DEFAULT tombol accordion (belum dibuka) */
+.accordion-button {
+  background-color: #f8f9fa; /* warna default Bootstrap */
+  color: #212529;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 8px !important;
+}
+
+/* TAMPILAN SAAT DIPENCET / AKTIF */
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, rgba(158, 193, 238, 1), rgba(58, 142, 246, 1));
+  color: white;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(58, 142, 246, 0.5);
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+}
+
+
 /* navbar */
 nav {
   padding: 10px 20px;

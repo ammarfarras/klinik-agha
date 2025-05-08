@@ -71,7 +71,7 @@ const footer = () => {
           <hr />
           <div className="d-flex justify-content-center align-items-center ">
             <div className="d-flex justify-content-center align-items-center ">
-              Copyright © 2023 Klinik Pratama Agha
+              Copyright © 2025 Klinik Pratama Agha
             </div>
           </div>
         </div>
