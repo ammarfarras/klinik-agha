@@ -14,7 +14,7 @@ import {
 import ErrorPage from "./pages/ErrorPage.jsx";
 
 // import page and components
-import Login from "./pages/Login.jsx";
+import Login from "./pages/login.jsx";
 import Register from "./pages/Register.jsx";
 import Layout from "./components/Layout.jsx";
 
