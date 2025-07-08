@@ -26,7 +26,7 @@ function Login() {
     }
 
     let res = await axios.get(
-      "https://64e224b4ab0037358818bf67.mockapi.io/users"
+      "https://680b688bd5075a76d98afe61.mockapi.io/users"
     );
     let data = await res.data;
 

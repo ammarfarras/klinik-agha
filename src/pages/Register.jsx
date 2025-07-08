@@ -12,57 +12,61 @@ function Register() {
 
   const navigate = useNavigate();
 
+  // Fungsi generate kode 4-byte hexadecimal (contoh: a3d91c4f)
+  const generateHexCode = () => {
+    return [...crypto.getRandomValues(new Uint8Array(4))]
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
+  };
+
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    // Validasi teks input tidak boleh kosong
     if (!name || !email || !password) {
       return Swal.fire("Error", "Mohon lengkapi semua kolom", "error");
     }
 
-    let res = await axios.get(
-      "https://64e224b4ab0037358818bf67.mockapi.io/users"
-    );
-    let data = await res.data;
+    try {
+      const res = await axios.get(
+        "https://680b688bd5075a76d98afe61.mockapi.io/users"
+      );
+      const data = res.data;
 
-    const ambilData = async () => {
-      const result = [];
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].email === email) {
-          result.push(data[i]);
+      const isEmailExist = data.some((user) => user.email === email);
+
+      if (isEmailExist) {
+        return Swal.fire(
+          "Important Message!",
+          "Email sudah terdaftar.",
+          "warning"
+        );
+      }
+
+      await axios.post(
+        "https://680b688bd5075a76d98afe61.mockapi.io/users",
+        {
+          name: name,
+          email: email,
+          password: password,
+          image:
+            "https://img.icons8.com/?size=512&id=tZuAOUGm9AuS&format=png",
+          user_code: generateHexCode(), // 4-byte hex code
         }
-      }
+      );
 
-      console.log(result);
-
-      if (result.length === 0) {
-        axios
-          .post("https://64e224b4ab0037358818bf67.mockapi.io/users", {
-            name: name,
-            email: email,
-            password: password,
-            image:
-              "https://img.icons8.com/?size=512&id=tZuAOUGm9AuS&format=png",
-          })
-          .then((result) => {
-            Swal.fire(
-              "Success!",
-              "your account has been successfully created.",
-              "success"
-            ).then((result) => {
-              if (result.isConfirmed) {
-                navigate("/login");
-              }
-            });
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      } else {
-        Swal.fire("Important Message!", "Email already registered.", "warning");
-      }
-    };
-    ambilData();
+      Swal.fire(
+        "Success!",
+        "Akun kamu berhasil dibuat.",
+        "success"
+      ).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login");
+        }
+      });
+    } catch (error) {
+      console.log(error);
+      Swal.fire("Error", "Terjadi kesalahan saat registrasi", "error");
+    }
   };
 
   return (
@@ -78,7 +82,8 @@ function Register() {
               <div className="header">
                 <h1>Daftar dulu yuk</h1>
                 <p>
-                  Gratis konsultasi di Klinik Pratama Agha dimanapun dan kapanpun
+                  Gratis konsultasi di Klinik Pratama Agha dimanapun dan
+                  kapanpun
                 </p>
               </div>
               <div className="login-form">

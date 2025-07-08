@@ -7,7 +7,7 @@ function DataBookingAdmin() {
   const [dataBooking, setDataBooking] = useState([]);
 
   useEffect(() => {
-    axios("https://64e224b4ab0037358818bf67.mockapi.io/users").then((result) =>
+    axios("https://680b688bd5075a76d98afe61.mockapi.io/users").then((result) =>
       setDataBooking(result.data)
     );
   }, []);
@@ -17,6 +17,10 @@ function DataBookingAdmin() {
       <div>
         {dataBooking.map((item) => (
           <Card className="p-5" key={item.id}>
+            <h6 className="mb-3">User ID :</h6>
+            <h4>{item.id}</h4>
+            <h6 className="mb-3">Kode Wajah :</h6>
+            <h4>{item.user_code}</h4>
             <h6 className="mb-3">Nama Pasien : </h6>
             <h4>{item.name}</h4>
             <h6 className="mb-3">E-Mail :</h6>
